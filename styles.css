@@ -1,0 +1,40 @@
+/* Masonry Layout Stylesheet */
+
+
+
+main {
+	max-width: 1440px;
+	margin: 0px auto;
+}
+
+main h2 {
+	text-align: center;
+}
+
+main img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+div#masonry {
+	column-count: 3;
+	column-gap: 20px;
+}
+
+div.item {
+	margin-bottom: 15px;
+}
+
+/* Media Query for tablet or smaller screen */
+
+@media only screen and (max-width: 768px) {
+	div#masonry {
+		column-count: 2;
+		column-gap: 10px;
+		
+	}
+	div.item {
+		margin-bottom: 5px;
+	}
+}
